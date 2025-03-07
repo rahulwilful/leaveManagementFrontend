@@ -1,0 +1,22 @@
+export const team24Logo = require('../assets/images/team24Logo.png');
+
+export const emailIcon = require('../assets/icons/emailIcon.png');
+export const padLockIcon = require('../assets/icons/padLockIcon.png');
+export const eyeIcon = require('../assets/icons/eyeIcon.png');
+export const activeHomeIcon = require('../assets/icons/activeHomeIcon.png');
+export const inActiveHomeIcon = require('../assets/icons/inActiveHomeIcon.png');
+export const activeDashboardIcon = require('../assets/icons/activeDashboardIcon.png');
+export const inActiveDashboardIcon = require('../assets/icons/inActiveDashboardIcon.png');
+export const activeUserIcon = require('../assets/icons/activeUserIcon.png');
+export const inActiveUserIcon = require('../assets/icons/inActiveUserIcon.png');
+export const activeCalandarIcon = require('../assets/icons/activeCalandarIcon.png');
+export const inActiveCalandarIcon = require('../assets/icons/inActiveCalanderIcon.png');
+export const backArrowIcon = require('../assets/icons/backArrowIcon.png');
+export const userIcon = require('../assets/icons/userIcon.png');
+export const rightArrowCircleIcon = require('../assets/icons/rightArrowCircleIcon.png');
+export const leftArrowCircleIcon = require('../assets/icons/leftArrowCircleIcon.png');
+export const calandarIcon = require('../assets/icons/calandarIcon.png');
+export const checkedIcon = require('../assets/icons/checkedIcon.png');
+export const logOutIcon = require('../assets/icons/logOutIcon.png');
+export const previousArrowIcon = require('../assets/icons/previousArrowIcon.png');
+export const nextArrowIcon = require('../assets/icons/nextArrowIcon.png');
