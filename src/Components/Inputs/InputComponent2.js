@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   View,
   TextInput,
@@ -5,6 +6,9 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+=======
+import {View, TextInput, StyleSheet, Image} from 'react-native';
+>>>>>>> origin/main
 import React, {useState} from 'react';
 import ES from '../../styles/ES';
 import {
@@ -13,7 +17,11 @@ import {
   inputBorderColor,
 } from '../../Constants/Colours';
 import {eyeIcon} from '../../Constants/ImagesAndIcons';
+<<<<<<< HEAD
 import {} from 'react-native-gesture-handler';
+=======
+import {TouchableOpacity} from 'react-native-gesture-handler';
+>>>>>>> origin/main
 import NormalText from '../Text/NormalText';
 import {keyBoardDefault} from '../../Constants/Fonts';
 
@@ -26,7 +34,10 @@ const InputComponent2 = ({
   icon,
   hideText,
   keyboardType,
+<<<<<<< HEAD
   toString,
+=======
+>>>>>>> origin/main
 }) => {
   const [secureText, setSecureText] = useState(true);
 
@@ -48,7 +59,11 @@ const InputComponent2 = ({
       </View>
 
       <TextInput
+<<<<<<< HEAD
         value={toString ? value.toString() : value}
+=======
+        value={value}
+>>>>>>> origin/main
         style={[s.input]}
         keyboardType={keyboardType ? keyboardType : keyBoardDefault}
         secureTextEntry={hideText ? secureText : false}
@@ -84,7 +99,10 @@ const s = StyleSheet.create({
     ES.hs54,
     ES.rounded10,
     ES.relative,
+<<<<<<< HEAD
     ES.px1,
+=======
+>>>>>>> origin/main
 
     {borderWidth: 1, borderColor: inputBorderColor},
   ]),

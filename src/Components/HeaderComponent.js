@@ -25,8 +25,12 @@ import {toggleLogin} from '../Redux/actions/authorizationAction';
 import {useDispatch} from 'react-redux';
 import ModalComponent from './ModalComponent';
 import Btn from './Buttons/Btn';
+<<<<<<< HEAD
 import {MMKV} from 'react-native-mmkv';
 const storage = new MMKV();
+=======
+
+>>>>>>> origin/main
 const screenHeight = Dimensions.get('window').height;
 
 const HeaderComponent = ({children, capitalize, hideBackIcon, logOut}) => {
@@ -36,7 +40,10 @@ const HeaderComponent = ({children, capitalize, hideBackIcon, logOut}) => {
 
   const handleLogOut = () => {
     console.log('handleLogout called');
+<<<<<<< HEAD
     storage.delete('token');
+=======
+>>>>>>> origin/main
     dispatch(toggleLogin(false));
   };
 

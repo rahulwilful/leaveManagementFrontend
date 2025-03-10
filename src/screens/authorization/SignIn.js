@@ -40,6 +40,7 @@ import NormalText from '../../Components/Text/NormalText';
 import Container from '../../Components/Container';
 import {useDispatch} from 'react-redux';
 import {toggleLogin} from '../../Redux/actions/authorizationAction';
+<<<<<<< HEAD
 import {MMKV} from 'react-native-mmkv';
 import axios from 'axios';
 import axiosClient from '../../../axiosClient';
@@ -51,6 +52,14 @@ const storage = new MMKV();
 const SignIn = ({navigation}) => {
   const [email, setEmail] = useState('management@gmail.com');
   const [password, setPassword] = useState('111111');
+=======
+
+const screenHeight = Dimensions.get('window').height;
+
+const SignIn = ({navigation}) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+>>>>>>> origin/main
 
   const [buttonLoading, setButtonLoading] = useState(false);
 

@@ -40,7 +40,6 @@ const Routes = () => {
       clearTimeout(timer);
     }, 3000);
   }, []);
-
   return (
     <>
       {isLoading ? (

@@ -18,15 +18,42 @@ const SelectInput = ({
   value,
   setValue,
   placeholder,
+<<<<<<< HEAD
   topPlaceHolder,
   options,
   lableFeild,
   valueFeild,
+=======
+
+>>>>>>> origin/main
   icon,
   hideText,
   keyboardType,
 }) => {
+<<<<<<< HEAD
   
+=======
+  const tempApprovers = [
+    {
+      id: 1,
+      name: 'John Doe',
+      label: 'John Doe',
+      value: 'John Doe',
+    },
+    {
+      id: 2,
+      name: 'Jane Doe2',
+      label: 'Jane Doe2',
+      value: 'Jane Doe2',
+    },
+    {
+      id: 3,
+      name: 'Jane Doe3',
+      label: 'Jane Doe3',
+      value: 'Jane Doe3',
+    },
+  ];
+>>>>>>> origin/main
   const [approver, setApprover] = useState(null);
 
   return (
@@ -34,15 +61,23 @@ const SelectInput = ({
       <Dropdown
         style={[
           {
+<<<<<<< HEAD
+=======
+            marginBottom: 8,
+>>>>>>> origin/main
             width: '100%',
             padding: 0,
           },
         ]}
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
         placeholderStyle={[ES.f16]}
         selectedTextStyle={[ES.f16]}
         inputSearchStyle={[ES.hs40, ES.f16]}
         iconStyle={{width: 26, height: 26}}
+<<<<<<< HEAD
         data={options}
         search
         maxHeight={300}
@@ -53,6 +88,18 @@ const SelectInput = ({
         value={value}
         onChange={item => {
           setValue(item);
+=======
+        data={tempApprovers}
+        search
+        maxHeight={300}
+        labelField="label"
+        valueField="value"
+        placeholder={placeholder ? placeholder : 'Select '}
+        searchPlaceholder="Search..."
+        value={approver?.value}
+        onChange={item => {
+          setApprover(item);
+>>>>>>> origin/main
         }}
       />
     </View>

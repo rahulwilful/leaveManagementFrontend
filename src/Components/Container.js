@@ -50,7 +50,11 @@ const Container = ({
             ? {backgroundColor: bgColor}
             : {backgroundColor: '#A5DCD5'},
         ]}>
+<<<<<<< HEAD
         <Loader isLoading={isLoading} />
+=======
+        <Loader tempBorder={true} isLoading={isLoading} />
+>>>>>>> origin/main
         <View
           style={[
             ES.fx1,
@@ -76,7 +80,11 @@ const Container = ({
             bounces={true}
             contentContainerStyle={[
               ES.w100,
+<<<<<<< HEAD
               ES.minScreenHeight,
+=======
+              ES.minScreenHeight, 
+>>>>>>> origin/main
               py ? {paddingVertical: py} : null,
               pb ? {paddingBottom: pb} : null,
               pt ? {paddingTop: pt} : null,

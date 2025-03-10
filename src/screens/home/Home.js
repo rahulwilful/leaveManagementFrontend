@@ -47,7 +47,6 @@ const Home = ({navigation}) => {
 
   const onDateSelect = date => {
     let tempDates = {...dates};
-
     let temp = {
       [date]: {
         selected: true,

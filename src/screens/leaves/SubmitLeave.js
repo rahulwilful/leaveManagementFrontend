@@ -168,6 +168,7 @@ const SubmitLeave = () => {
   return (
     <>
       <HeaderComponent hideBackIcon>Submit Leave</HeaderComponent>
+<<<<<<< HEAD
       <Container
         pb={79}
         isLoading={isLoading}
@@ -202,6 +203,9 @@ const SubmitLeave = () => {
           </View>
         </View>
 
+=======
+      <Container pb={79}>
+>>>>>>> origin/main
         <KeyboardAvoidingComponent>
           <View style={[]}>
             <View style={[ES.mt1]}>
@@ -211,6 +215,53 @@ const SubmitLeave = () => {
                   size={20}
                   fontFamily={redHatDisplayBold}
                   color={primaryColor}>
+<<<<<<< HEAD
+=======
+                  select applicable leave type
+                </NormalText>
+                <View style={[]}>
+                  <View style={[, ES.gap3]}>
+                    <RadioButton
+                      selected={sickLeave}
+                      method={() => selectLeaveType('SL')}
+                      totalLeaves={9}
+                      usedLeaves={0}
+                      placeholder={'Sick leave'}
+                    />
+                    <RadioButton
+                      method={() => selectLeaveType('CL')}
+                      selected={casualLeave}
+                      totalLeaves={9}
+                      usedLeaves={1}
+                      placeholder={'Casual leave'}
+                    />
+                    <RadioButton
+                      method={() => selectLeaveType('PL')}
+                      selected={paidLeave}
+                      totalLeaves={9}
+                      usedLeaves={8}
+                      placeholder={'Paid leave'}
+                    />
+                    <RadioButton
+                      method={() => selectLeaveType('CF')}
+                      selected={compOff}
+                      totalLeaves={9}
+                      usedLeaves={9}
+                      placeholder={'comp off '}
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+
+            <View style={[ES.mt1]}>
+              <View style={[ES.bgLight, ES.rounded10, ES.p2, ES.gap3]}>
+                <NormalText
+                  center
+                  size={20}
+                  fontFamily={redHatDisplayBold}
+                  color={primaryColor}>
+>>>>>>> origin/main
                   select applicable leave date
                 </NormalText>
                 <View style={[]}>
@@ -221,14 +272,20 @@ const SubmitLeave = () => {
                       setValue={setStartDate}
                       placeholder={'Start Date'}
                     />
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
                     <DateInput
                       icon={calandarIcon}
                       value={endDate}
                       setValue={setEndDate}
                       placeholder={'End Date'}
                     />
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
                     <CheckBox
                       method={() => setHalfDay(!halfDay)}
                       selected={halfDay}
@@ -236,6 +293,10 @@ const SubmitLeave = () => {
                     />
                   </View>
                 </View>
+<<<<<<< HEAD
+=======
+                <View></View>
+>>>>>>> origin/main
               </View>
             </View>
 
@@ -250,6 +311,7 @@ const SubmitLeave = () => {
                 </NormalText>
                 <View style={[]}>
                   <View style={[ES.gap3]}>
+<<<<<<< HEAD
                     <SelectInput
                       options={approvers}
                       lableFeild={'name'}
@@ -258,6 +320,13 @@ const SubmitLeave = () => {
                       setValue={setApprover}
                       placeholder={'Approver'}
                     />
+=======
+                    {/*  <InputComponent
+                    icon={calandarIcon}
+                    placeholder={'Start Date'}
+                    /> */}
+                    <SelectInput />
+>>>>>>> origin/main
                   </View>
                 </View>
                 <View></View>
@@ -266,11 +335,16 @@ const SubmitLeave = () => {
           </View>
         </KeyboardAvoidingComponent>
       </Container>
+<<<<<<< HEAD
 
       <View style={[ES.centerItems, ES.absolute, ES.w100, ES.bottom2]}>
         <Btn method={() => addLeave()} width={'85%'}>
           Submit
         </Btn>
+=======
+      <View style={[ES.centerItems, ES.absolute, ES.w100, ES.bottom2]}>
+        <Btn width={'85%'}>Submit</Btn>
+>>>>>>> origin/main
       </View>
     </>
   );

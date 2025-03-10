@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "dashboard2",
   "displayName": "dashboard2"
+=======
+  "name": "leaveManagement",
+  "displayName": "leaveManagement"
+>>>>>>> origin/main
 }

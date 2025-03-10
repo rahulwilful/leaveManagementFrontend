@@ -80,7 +80,6 @@ const ChangePasswordModal = ({isModalVisible, closeModal, email}) => {
         <HeadingText fontFamily={redHatDisplaySemiBold} size={24} textCenter>
           Change Password
         </HeadingText>
-
         <InputComponent2
           topPlaceHolder={'Current Password'}
           value={currentPassword}
@@ -94,7 +93,6 @@ const ChangePasswordModal = ({isModalVisible, closeModal, email}) => {
           setValue={setNewPassword}
           hideText
         />
-
         <InputComponent2
           topPlaceHolder={'Confirm Password'}
           value={confirmPassword}

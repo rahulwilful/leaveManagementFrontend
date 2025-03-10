@@ -17,7 +17,6 @@ const Dashboard = () => {
       <HeaderComponent hideBackIcon>
         Attendance Monitor <Text style={[ES.uppercase]}>(HR)</Text>
       </HeaderComponent>
-
       <Container>
         <View style={[ES.gap1]}>
           <View style={[]}>

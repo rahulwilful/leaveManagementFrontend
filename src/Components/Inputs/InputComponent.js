@@ -16,7 +16,10 @@ const InputComponent = ({
   icon,
   hideText,
   keyboardType,
+<<<<<<< HEAD
   toString,
+=======
+>>>>>>> origin/main
 }) => {
   const [secureText, setSecureText] = useState(true);
 
@@ -27,7 +30,11 @@ const InputComponent = ({
       </View>
 
       <TextInput
+<<<<<<< HEAD
         value={toString ? value.toString() : value}
+=======
+        value={value}
+>>>>>>> origin/main
         style={[s.input]}
         secureTextEntry={hideText ? secureText : false}
         onChangeText={text => setValue(text)}
@@ -61,7 +68,11 @@ const s = StyleSheet.create({
     ES.gap1,
     ES.hs54,
     ES.rounded10,
+<<<<<<< HEAD
     ES.px1,
+=======
+
+>>>>>>> origin/main
     {backgroundColor: fullWhite},
     {borderWidth: 1, borderColor: inputBorderColor},
   ]),

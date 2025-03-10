@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import {View, StyleSheet, Image, TouchableOpacity, Text} from 'react-native';
+=======
+import {View, StyleSheet, Image} from 'react-native';
+>>>>>>> origin/main
 import React, {useEffect, useState} from 'react';
 import ES from '../../styles/ES';
 import {
@@ -9,10 +13,16 @@ import {
   lightTextColor,
 } from '../../Constants/Colours';
 import {eyeIcon} from '../../Constants/ImagesAndIcons';
+<<<<<<< HEAD
 import DatePicker from 'react-native-modern-datepicker';
 import NormalText from '../Text/NormalText';
 import ModalComponent from '../ModalComponent';
 import {Calendar} from 'react-native-calendars';
+=======
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import DatePicker from 'react-native-date-picker';
+import NormalText from '../Text/NormalText';
+>>>>>>> origin/main
 
 const DateInput = ({
   value,
@@ -27,13 +37,19 @@ const DateInput = ({
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+<<<<<<< HEAD
     console.log('value: ', value);
     console.log('date: ', date);
   }, [value, date]);
+=======
+    console.log(value ? value : date);
+  }, [value]);
+>>>>>>> origin/main
 
   // Function to format the date into a readable string
   const formatDate = date => {
     if (!date) return placeholder;
+<<<<<<< HEAD
 
     // Ensure date is a Date object
     const validDate = date instanceof Date ? date : new Date(date);
@@ -77,6 +93,9 @@ const DateInput = ({
     setDate(date);
     setValue(date);
     //setValue(date);
+=======
+    return date.toLocaleDateString(); // You can customize this format as needed
+>>>>>>> origin/main
   };
 
   return (
@@ -86,6 +105,7 @@ const DateInput = ({
       </View>
       <View style={[s.input]}>
         <NormalText color={lightTextColor} size={15}>
+<<<<<<< HEAD
           <Text>{date ? formatDate(date) : placeholder}</Text>
         </NormalText>
       </View>
@@ -96,6 +116,24 @@ const DateInput = ({
           }}
         />
       </ModalComponent>
+=======
+          {value ? formatDate(value) : placeholder}
+        </NormalText>
+      </View>
+      <DatePicker
+        mode="date"
+        modal
+        open={open}
+        date={value ? value : date}
+        onConfirm={date => {
+          setOpen(false);
+          setValue(date); // Update the value when a date is selected
+        }}
+        onCancel={() => {
+          setOpen(false);
+        }}
+      />
+>>>>>>> origin/main
       <View
         style={[
           s.iconContainer,

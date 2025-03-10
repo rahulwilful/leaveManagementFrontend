@@ -1,8 +1,16 @@
 import {View, Text, Image} from 'react-native';
+<<<<<<< HEAD
 import React, {useEffect, useState} from 'react';
 import HeaderComponent from '../../Components/HeaderComponent';
 import Container from '../../Components/Container';
 import ES from '../../styles/ES';
+=======
+import React, {useState} from 'react';
+import HeaderComponent from '../../Components/HeaderComponent';
+import Container from '../../Components/Container';
+import ES from '../../styles/ES';
+import NormalText from '../../Components/Text/NormalText';
+>>>>>>> origin/main
 import {fullWhite} from '../../Constants/Colours';
 import {userIcon} from '../../Constants/ImagesAndIcons';
 import InputComponent2 from '../../Components/Inputs/InputComponent2';
@@ -12,6 +20,7 @@ import {keyBoardPhonePad} from '../../Constants/Fonts';
 import Btn from '../../Components/Buttons/Btn';
 import {useNavigation} from '@react-navigation/native';
 import BtnOutLineLight from '../../Components/Buttons/BtnOutLineLight';
+<<<<<<< HEAD
 import axiosClient from '../../../axiosClient';
 import SelectInputOutline from '../../Components/Inputs/SelectInputOutline';
 import CheckBox from '../../Components/Inputs/CheckBox';
@@ -72,6 +81,16 @@ const AddEmployee = () => {
     getDepts();
     getRoles();
   }, []);
+=======
+
+const AddEmployee = () => {
+  const navigation = useNavigation();
+  const [name, setName] = useState('');
+  const [organisation, setOrganisation] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [password, setPassword] = useState('');
+>>>>>>> origin/main
 
   const verifyInputs = () => {
     if (name == '') {
@@ -80,12 +99,16 @@ const AddEmployee = () => {
     }
 
     if (organisation == '') {
+<<<<<<< HEAD
       Toast({message: 'Please select organisation'});
       return false;
     }
 
     if (role == '') {
       Toast({message: 'Please select role'});
+=======
+      Toast({message: 'Please enter organisation'});
+>>>>>>> origin/main
       return false;
     }
 
@@ -107,6 +130,7 @@ const AddEmployee = () => {
     return true;
   };
 
+<<<<<<< HEAD
   const handleAddEmployee = async () => {
     if (verifyInputs() == false) return;
     setButtonLoading(true);
@@ -137,6 +161,8 @@ const AddEmployee = () => {
     setButtonLoading(false);
   };
 
+=======
+>>>>>>> origin/main
   return (
     <>
       <HeaderComponent>Add Employee</HeaderComponent>
@@ -175,6 +201,7 @@ const AddEmployee = () => {
                   value={name}
                   setValue={setName}
                 />
+<<<<<<< HEAD
                 <SelectInputOutline
                   topPlaceHolder={'Organisation'}
                   options={depts}
@@ -190,6 +217,12 @@ const AddEmployee = () => {
                   setValue={setRole}
                   lableFeild={'name'}
                   valueFeild={'_id'}
+=======
+                <InputComponent2
+                  topPlaceHolder={'Organisation'}
+                  value={organisation}
+                  setValue={setOrganisation}
+>>>>>>> origin/main
                 />
                 <InputComponent2
                   topPlaceHolder={'Email'}
@@ -208,6 +241,7 @@ const AddEmployee = () => {
                   setValue={setPassword}
                   hideText={true}
                 />
+<<<<<<< HEAD
                 <CheckBox
                   placeholder={'Approver'}
                   selected={approver}
@@ -218,6 +252,14 @@ const AddEmployee = () => {
               <Btn isLoading={buttonLoading} method={() => handleAddEmployee()}>
                 Add Employee
               </Btn>
+=======
+              </View>
+              <BtnOutLine
+                method={() => verifyInputs()}
+                children={'Save Draft'}
+              />
+              <Btn>Add Employee</Btn>
+>>>>>>> origin/main
             </View>
           </View>
           <View style={[ES.py4, ES.centerItems, {padding: 15}]}>

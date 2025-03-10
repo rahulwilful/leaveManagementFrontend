@@ -34,7 +34,11 @@ const KeyboardAvoidingComponent = ({children, py, tempBorder, bg}) => {
             ? {backgroundColor: bg}
             : {backgroundColor: backgroundColor},
         ]}>
+<<<<<<< HEAD
         <View style={[ES.fx1]}>
+=======
+        <View style={[ES.fx1, ES.centerItems]}>
+>>>>>>> origin/main
           <View style={[ES.w100, py ? {paddingVertical: py} : null]}>
             <ScrollView
               contentContainerStyle={[

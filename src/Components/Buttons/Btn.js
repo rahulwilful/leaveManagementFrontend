@@ -49,7 +49,13 @@ const Btn = ({
             ES.capitalize,
           ]}>
           {isLoading ? (
+<<<<<<< HEAD
             <Loader isLoading={true} size={'large'} color={'#fff'} />
+=======
+           
+              <Loader size={'large'} color={'#fff'} />
+          
+>>>>>>> origin/main
           ) : (
             <Text
               style={[

@@ -1010,11 +1010,19 @@ const ES = StyleSheet.create({
   /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
   shadow1: {
+<<<<<<< HEAD
     shadowColor: '#537c77', // Shadow color
     shadowOffset: {width: 2, height: 0}, // Offset in x and y directions
     shadowOpacity: 0.5, // Opacity of the shadow
     shadowRadius: 10, // How blurred the shadow is
     elevation: 10,
+=======
+    shadowColor: '#000', // Shadow color
+    shadowOffset: {width: 0, height: 2}, // Offset in x and y directions
+    shadowOpacity: 0.3, // Opacity of the shadow
+    shadowRadius: 3.84, // How blurred the shadow is
+    elevation: 3,
+>>>>>>> origin/main
   },
   shadow2: {
     shadowColor: '#000', // Shadow color
@@ -2254,7 +2262,11 @@ const ES = StyleSheet.create({
   wAuto: {
     width: 'auto',
   },
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/main
   w1: {
     width: '1%',
   },
