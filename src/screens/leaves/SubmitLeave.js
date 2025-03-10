@@ -149,10 +149,11 @@ const SubmitLeave = () => {
     console.log('form: ', form);
 
     try {
-      const res = await axiosClient.get(`/leave/log/add`);
+      const res = await axiosClient.post(`/leave/log/add`, form);
       console.log('res: ', res);
-      if (res?.data?.result) {
-        setLeaveTypes(res?.data?.result);
+      if (res) {
+        Toast({message: 'Leave added successfully'});
+        //navigation.goBack();
       }
     } catch (error) {
       console.log('error: ', error);
@@ -172,7 +173,6 @@ const SubmitLeave = () => {
         isLoading={isLoading}
         refreshing={isLoading}
         refreshFunction={callFunctions}>
-
         <View style={[ES.mt1, leaveTypes.length <= 0 ? ES.dNone : null]}>
           <View style={[ES.bgLight, ES.rounded10, ES.p2, ES.gap3]}>
             <NormalText
@@ -222,11 +222,11 @@ const SubmitLeave = () => {
                       placeholder={'Start Date'}
                     />
 
-                    <DateInput 
-                      icon={calandarIcon} 
-                      value={endDate} 
-                      setValue={setEndDate} 
-                      placeholder={'End Date'} 
+                    <DateInput
+                      icon={calandarIcon}
+                      value={endDate}
+                      setValue={setEndDate}
+                      placeholder={'End Date'}
                     />
 
                     <CheckBox
@@ -263,7 +263,6 @@ const SubmitLeave = () => {
                 <View></View>
               </View>
             </View>
-
           </View>
         </KeyboardAvoidingComponent>
       </Container>
